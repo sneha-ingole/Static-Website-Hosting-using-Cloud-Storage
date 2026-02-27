@@ -63,26 +63,42 @@ No EC2 / No VM / No Server Provisioned.
 📂 Project Structure
 
 project-folder/
+
 │
+
 ├── index.html
+
 ├── style.css
+
 └── assets/
+
   └── images
     
 
 🔐 Sample Bucket Policy (AWS S3)
 
 {
+
 "Version": "2012-10-17",
+
   "Statement": [
+  
    {
+   
     "Sid": "PublicReadGetObject",
+    
       "Effect": "Allow",
+      
       "Principal": "*",
+      
       "Action": "s3:GetObject",
+      
       "Resource": "arn:aws:s3:::sneha-ingole/*"
+      
       }
+      
     ]
+    
   }
 
 
