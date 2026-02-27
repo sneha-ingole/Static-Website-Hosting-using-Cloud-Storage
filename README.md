@@ -1,4 +1,6 @@
-#🌍 Global Launch – Static-Website-Hosting-using-Cloud-Storage
+🌍 Global Launch – Static-Website-Hosting-using-Cloud-Storage
+
+
 📌 Project Overview
 
 This project demonstrates how to host a personal portfolio website globally using Cloud Storage without provisioning any servers.
