@@ -43,69 +43,93 @@ User → Internet → Cloud Storage (S3/Blob) → Static Website Files
 
 No EC2 / No VM / No Server Provisioned.
 
+
 🛠️ Tools & Services Used
 
-AWS S3 (Static Website Hosting)
+-AWS S3 (Static Website Hosting)
 
-Bucket Policy (Public Access)
+-Bucket Policy (Public Access)
 
-HTML5
+-HTML5
 
-CSS3
+-CSS3
 
-(Optional) AWS CloudFront for CDN
+-(Optional) AWS CloudFront for CDN
+
 
 📂 Project Structure
 
 project-folder/
+
 │
+
 ├── index.html
+
 ├── style.css
+
 └── assets/
+
     └── images
+    
 
 🔐 Sample Bucket Policy (AWS S3)
 
 {
+
   "Version": "2012-10-17",
+  
   "Statement": [
+  
     {
+    
       "Sid": "PublicReadGetObject",
+      
       "Effect": "Allow",
+      
       "Principal": "*",
+      
       "Action": "s3:GetObject",
+      
       "Resource": "arn:aws:s3:::sneha-ingole/*"
+      
     }
+    
   ]
+  
 }
+
+
+
 
 💡 Key Features
 
-Serverless hosting
+-Serverless hosting
 
-Highly scalable
+-Highly scalable
 
-Low cost
+-Low cost
 
-Global accessibility
+-Global accessibility
 
-Easy deployment
+-Easy deployment
 
-Secure & reliable
+-Secure & reliable
+
 
 📈 What I Learned
 
 How static website hosting works
 
-Cloud storage configuration
+-Cloud storage configuration
 
-Bucket policy management
+-Bucket policy management
 
-Public access control
+-Public access control
 
-Cost optimization in cloud
+-Cost optimization in cloud
 
 Global content delivery concepts
+
 
 🔥 Future Enhancements
 
