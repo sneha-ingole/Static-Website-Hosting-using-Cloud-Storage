@@ -25,6 +25,7 @@ As a freelance developer, the client needed:
 
 We leveraged Cloud Storage to host a static website.
 
+
 🔧 Implementation Steps
 
 1.Created a public cloud storage bucket (AWS S3 / Azure Blob Storage)
@@ -37,11 +38,13 @@ We leveraged Cloud Storage to host a static website.
 
 5.Generated a public website endpoint URL
 
+
 🏗️ Architecture
 
 User → Internet → Cloud Storage (S3/Blob) → Static Website Files
 
 No EC2 / No VM / No Server Provisioned.
+
 
 
 🛠️ Tools & Services Used
@@ -60,45 +63,27 @@ No EC2 / No VM / No Server Provisioned.
 📂 Project Structure
 
 project-folder/
-
 │
-
 ├── index.html
-
 ├── style.css
-
 └── assets/
-
-    └── images
+  └── images
     
 
 🔐 Sample Bucket Policy (AWS S3)
 
 {
-
-  "Version": "2012-10-17",
-  
+"Version": "2012-10-17",
   "Statement": [
-  
-    {
-    
-      "Sid": "PublicReadGetObject",
-      
+   {
+    "Sid": "PublicReadGetObject",
       "Effect": "Allow",
-      
       "Principal": "*",
-      
       "Action": "s3:GetObject",
-      
       "Resource": "arn:aws:s3:::sneha-ingole/*"
-      
-    }
-    
-  ]
-  
-}
-
-
+      }
+    ]
+  }
 
 
 💡 Key Features
